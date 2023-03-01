@@ -1,7 +1,8 @@
 # GRBL_SPD
 Standard router integration board for CNC (Currently for Makita 701C only) 
 
-# Features:
+/images/electrocat.png
+
 **Features for Makita 701C:**
   - 10,000 to 30,000 RPM
   - On/Off control

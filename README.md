@@ -31,7 +31,7 @@
   This project allows for automatic control of a standard router for CNC machines. GRBL_SPD lets you set the rpm for your bits in software such as Vectric and have it automatically set your router. This cicuit replaces the potentiometer in the router and has an accuracy of approximately between +/- 100 to 200 RPM. In most cases this deviation has no impact on the machining process. You now don't have to turn on the router before sending the file, GRBL_SPD will do it for you. The enable pin on the controller was not needed to distinguish on/off states which leaves it available for the control of a dust collection system, lighting system or whatever necessary. There are inputs for manual control which overrides the RPM setting in the GRBL file being sent. 
 </p>
 
-<h3>CONNECTIONS</h3>
+<h2>CONNECTIONS</h2>
 <p><b><i>CONTROLLER TO GRBL_SPD:</i></b></br>  Connections from the controller to the GRBL_SPD include power (5v), ground, and the PWM (0-5v) signal. Since both on/off and rpm are durived from the PWM pin, you must ensure in your post processor that S0 is included at the end of the file. Some grbl senders will automatically send S0 when M0 is sent, some will not so it's better to add it. Power and ground from the controller are self explanitory when using Arduino as they are clearly marked.
 </p>
 </br>
@@ -41,8 +41,14 @@
 <p><b><i>MANUAL CONTROL TO GRBL_SPD:</i><b></br> This feature has five connections as well. Three connect to an external potentiometer and two connect to a switch. At any point with the power on to the controller the switch will activate the router. When a file is being sent and a cut path is in progress, if needed you can turn on the switch to override the set RPM. To ensure there is no sudden drop or rise in RPM it will not override until the manual dial is within approx 2% of the set RPM. 
 </p>
   
-<h3>INSTALLATION</h3>
-<a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/installation/ConnectionDiagram.pdf">Connection Diagram</a>
-<a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/stl/ManualMount.stl">Manual Control Mount (Millright MegaV)</a>
-<a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/stl/FillerMount.stl">Manuall Control Filler (For non-MegaV CNCs) s</a>
+<h2>INSTALLATION</h2>
+<i>Diagrams:</i></br>
+<a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/installation/ConnectionDiagram.pdf">Connection Diagram</a></br></br>
+<i>STL files for manual control:</i></br>
+<a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/stl/ManualMount.stl">Manual Control Mount (Millright MegaV)</a></br>
+<a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/stl/FillerMount.stl">Manuall Control Filler (For non-MegaV CNCs)</a></br>
+
+<p><b><i>CONTROLLER TO GRBL_SPD:</i></b></br> 
+  
+</p>
 </html>

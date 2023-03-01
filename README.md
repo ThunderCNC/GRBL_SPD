@@ -1,4 +1,9 @@
 # GRBL_SPD
 Standard router integration board for CNC 
 
-<h1 GRBL />
+# Features:
+Makita 701C
+  -10,000 to 30,000 RPM
+  -On/Off control
+
+This project allows for automatic control of a standard router for CNC machines. 

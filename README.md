@@ -43,4 +43,6 @@
   
 <h3>INSTALLATION</h3>
 <a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/installation/ConnectionDiagram.pdf">Connection Diagram</a>
+<a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/stl/ManualMount.stl">Manual Control Mount (Millright MegaV)</a>
+<a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/stl/FillerMount.stl">Manuall Control Filler (For non-MegaV CNCs) s</a>
 </html>

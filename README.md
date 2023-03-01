@@ -5,12 +5,23 @@
 <p align="center">
   <img height="300" src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v3.png">
 </p>
-<p>Developed for use with, but not limited to the Arduino Uno board (Flashed with GRBL 1.1)</p>
+</br>
+<div align="center">
+<p align="center">Link to purchase kits</p>
+<a href="https://www.tindie.com/stores/gingertesla/?ref=offsite_badges&utm_source=sellers_GingerTesla&utm_medium=badges&utm_campaign=badge_medium">
+  <img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78">
+</a>
+</div>
+</br>
+<p align="center">Developed for use with, but not limited to the Arduino Uno board (Flashed with GRBL 1.1)</p>
+</br>
+
 <p> 
   <h2>Features for Makita 701C:</h2>
   <ul>
     <li>10,000 to 30,000 RPM</li>
     <li>On/Off control</li>
+    <li>External manual controls</li>
   </ul>
 </p>
 

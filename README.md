@@ -1,8 +1,7 @@
 <h1 align="center">GRBL_SPD</h1>
 <h3 align="center">Standard router integration board for CNC (Currently for Makita 701C only)</h3>
 
-![GRBL_SPD Makita Version](https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v3.png)
-
+<img align="center">src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v3.png">
 **Features for Makita 701C:**
   - 10,000 to 30,000 RPM
   - On/Off control

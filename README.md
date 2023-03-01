@@ -40,4 +40,7 @@
 </br>
 <p><b><i>MANUAL CONTROL TO GRBL_SPD:</i><b></br> This feature has five connections as well. Three connect to an external potentiometer and two connect to a switch. At any point with the power on to the controller the switch will activate the router. When a file is being sent and a cut path is in progress, if needed you can turn on the switch to override the set RPM. To ensure there is no sudden drop or rise in RPM it will not override until the manual dial is within approx 2% of the set RPM. 
 </p>
+  
+<h3>INSTALLATION</h3>
+<a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/installation/ConnectionDiagram.pdf">Connection Diagram</a>
 </html>

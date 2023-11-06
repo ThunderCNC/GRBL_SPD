@@ -32,7 +32,7 @@
 </p>
 
 <h2>CONNECTIONS</h2>
-<p><b><i>CONTROLLER TO GRBL_SPD:</i></b></br>  Connections from the controller to the GRBL_SPD include power (5v), ground, and the PWM (0-5v) signal. Since both on/off and rpm are durived from the PWM pin, you must ensure in your post processor that S0 is included at the end of the file. Some grbl senders will automatically send S0 when M0 is sent, some will not so it's better to add it. Power and ground from the controller are self explanitory when using Arduino as they are clearly marked.
+<p><b><i>CONTROLLER TO GRBL_SPD:</i></b></br>  Connections from the controller to the GRBL_SPD include power (5v), ground, and the PWM (0-5v) signal. Since both on/off and rpm are durived from the PWM pin, you must ensure in your post processor that S0 is included at the end of the file. Some grbl senders will automatically send S0 when M5 is sent, some will not so it's better to add it. Power and ground from the controller are self explanitory when using Arduino as they are clearly marked.
 </p>
 </br>
 <p><b><i>GRBL_SPD TO ROUTER:</i><b></br>  There are five connections inside the router. Three are to the the wires left when the router speed dial is removed and the other to connect to the relay. The cable/cables used for these connections should be shielded to help eliminate EMF. The relay breaks the power connection to the router and by leaving the connection to the factory switch makes for a fail safe. There is plenty of room inside the router housing for the relay to make thins neat.

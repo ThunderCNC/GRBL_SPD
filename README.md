@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <h1 align="center">GRBL_SPD</h1>
 <h3 align="center">Router integration board for CNC (Currently for Makita 701C only)</h3>

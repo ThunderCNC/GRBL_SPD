@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
-<h1 align="center">GRBL_SPD</h1>
-<h3 align="center">Router integration board for CNC (Currently for Makita 701C only)</h3>
-
+<html lang="en">
+<head>
+  <h1 align="center">GRBL_SPD</h1>
+  <h3 align="center">Router integration board for CNC (Currently for Makita 701C only)</h3>
+</head>
+<body>  
 <p align="center">
   <img height="300" src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v3.png">
 </p>
@@ -59,4 +61,5 @@
 <p><b><i>CONTROLLER TO GRBL_SPD:</i></b>
   
 </p>
+</body>
 </html>

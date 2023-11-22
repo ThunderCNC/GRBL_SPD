@@ -21,7 +21,7 @@
   <div>
     <h4>Version 4 -- Coming Soon</h4>
     <a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/versions/Version_4.md">
-      <img height="150" src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v3.png">
+      <img height="150" src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v4.png">
     </a>
   </div></br>
   <div>

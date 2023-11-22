@@ -14,19 +14,19 @@
   <h2>VERSIONS AVAILABLE AND COMING SOON</h2>
   <div>
     <h4>Version 3 -- Available</h4>
-    <a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/versions/Version_3.md">
+    <a title="Go to v3 page" href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/versions/Version_3.md">
       <img height="150" src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v3.png">
     </a>
   </div></br>
   <div>
     <h4>Version 4 -- Coming Soon</h4>
-    <a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/versions/Version_4.md">
+    <a title="Go to v4 page" href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/versions/Version_4.md">
       <img height="150" src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v4.png">
     </a>
   </div></br>
   <div>
     <h4>Version 5 -- Coming Soon</h4>
-    <a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/versions/Version_5.md">
+    <a title="Go to v5 page" href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/versions/Version_5.md">
       <img height="150" src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v5.png">
     </a>
   </div></br>

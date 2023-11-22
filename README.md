@@ -7,7 +7,7 @@
 </head>
 <body>  
     
-<table>
+<table width="100%">
   <tr>  
     <td width="33%"> 
       <p align="center">Version 3 -- Available</p>

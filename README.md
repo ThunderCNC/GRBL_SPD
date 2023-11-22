@@ -2,12 +2,34 @@
 <html lang="en">
 <head>
   <h1 align="center">GRBL_SPD</h1>
-  <h3 align="center">Router integration board for CNC (Currently for Makita 701C only)</h3>
+  <p align="center">Developed for use with, but not limited to the Arduino Uno board (Flashed with GRBL 1.1)</p>
+  <p align="center">Router integration board for CNC (Currently for Makita 701C only)</p>
 </head>
 <body>  
-<p align="center">
-  <img height="300" src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v3.png">
-</p>
+    
+<table>
+  <tr>  
+    <td width="33%"> 
+      <p align="center">Version 3 -- Available</p>
+      <a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/versions/Version_3.md">
+        <img height="150" src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v3.png">
+      </a>
+    </td>
+    <td width="33%">   
+      <p align="center">Version 4 -- Coming Soon</p>
+      <a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/versions/Version_4.md">
+        <img height="150" src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v3.png">
+      </a>
+    </td>
+    <td width="33%">
+      <p align="center">Version 5 -- Coming Soon</p>
+      <a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/versions/Version_5.md">
+        <img height="150" src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v3.png">
+      </a>
+    </td>
+  </tr>
+</table>
+
 
 <div align="center">
 <p align="center">Link to purchase kits</p>
@@ -16,7 +38,7 @@
 </a>
 </div>
 
-<p align="center">Developed for use with, but not limited to the Arduino Uno board (Flashed with GRBL 1.1)</p>
+
 
 
 <p> 

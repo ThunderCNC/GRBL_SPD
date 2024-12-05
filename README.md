@@ -101,9 +101,11 @@
   
   <h3><STRONG>WARNING!</STRONG> Voltages above 5v connected to this board will damage the microcontroller. If experimenting with controllers other than the standard Uno be sure to double check voltages and/or add protection to inputs. Zener and resistor for example.</h3>
   <h3>Possible high voltage setup:</h3>
+  <div>
   <a href="images/higherVoltage2.png">
     <img  width="100%" src="images/higherVoltage2.png">
   </a>
+  </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,9 +138,11 @@ $32=0
       <li>Manual SW --> [IN] and [+] to switch</li>
       <li>Manual CTRL --> [-] / [ADJ] / [-] to potentiometer</li>
     </ul>
+<div>
 <a href="images/ConnectionDiagram_v4.png">
   <img  width="100%" src="images/ConnectionDiagram_v4.png">
 </a>
+</div>
 </br>
 </br>
 </br>
@@ -193,24 +197,27 @@ Start by removing the router and remove the four screws holding the cap.  Once o
 If you have downloaded and printed the stl file provided here then start by running the wires through the printed hole at the back.  If your wires are going to go downward from the enclosure then start by connecting the wiring to the potentiometer (refer to connection diagram).  Mount the potentiometer and the switch into the 3D printed enclosure. Connect the remaining two wires to the switch.  
 This enclosure is made to snap onto the Millright Mega V leg.  If you're not using this enclosure then do as you need and make the same connections as per your mount.
 
-
+<div>
 <a href="images/IMG_5917.JPG">
   <img  height="250" src="images/IMG_5917.JPG">
 </a>
 <a href="images/IMG_5918.JPG">
   <img  height="250" src="images/IMG_5918.JPG">
 </a>
+</div>
 
 <h3>The Mount:</h3>
 
 The STL files for this mount and the filler piece are located in the stl folder.
 
+<div>
 <a href="images/ControlPanel2.JPG">
   <img  height="250" src="images/ControlPanel2.JPG">
 </a>
 <a href="stl/Filler3.JPG">
   <img  height="250" src="images/Filler3.JPG">
 </a>
+</div>
 
 <h3> GRBL_SPD Connections:</h3>
 Run the wire from the router to the control box through the drag chains if equipped. Run the wires from the manual controls if installed.  Make the router and manual control connections to the GRBL_SPD board (refer to connection diagram). Connect the PWM wire to the GRBL controller. Connect the 5v power and ground to the GRBL controller.  Take a moment to check all connections.
@@ -221,7 +228,7 @@ Run the wire from the router to the control box through the drag chains if equip
 2. Turn the manual control switch on if you have it. The spindle should be running at what the dial is indicating. Check that the RELAY ON led and the MANUAL ON led are on.  Turn the knob from left (10000 rpm) to right (30000 rpm).  If the RPM is reacting opposite to the dial then the potentiometer wires have been connected incorrectly. Reverse the (+) and (-) wires at the GRBL_SPD board.
 3. In your sender software be sure to set $30 to 30000 and $31 to 10000. Also make sure if there is a configuration section in the software, be sure to check that the min and max rpm are set the same. You may need to restart the software after changes are made.
 4. With manual turned off, start the spindle with the software.  Adjust to different RPM to ensure it’s functioning.  If it’s not then check your connections and/or ensure that the variable spindle option is enabled in GRBL with a voltmeter.
-5. If all is well and you have the manual controls, turn the spindle on with the software set at 15000 rpm.  Set the manual dial to 30000 rpm and turn on the switch.  Rpm should not have changed.  Slowly turn the dial down towards 15000 rpm and when it is close, the manual control will take over.  If the switch is turned off it will revert back to the software setting.  If you’re in the middle of a path, leave the switch on until complete.
+5. If all is well and you have the manual controls, turn the spindle on with the software set at 15000 rpm.  Set the manual dial to 30000 rpm and turn on the switch.  Rpm should not have changed.  Slowly turn the dial down towards 15000 rpm and when it is close, the manual control will take over.  If the switch is turned off it will revert back to the software setting.  If you’re in the middle of a path and want to override the software speed, leave the switch on until complete. The router will turn off when the path is complete.
 6. Test your M3, M5, S##### commands.
 
 Now you can set your speeds for each bit in your cad software of choice and your router will automatically be set to your required speed.  When your path is finished the router will turn off when complete.

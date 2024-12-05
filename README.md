@@ -2,7 +2,7 @@
   
   <div align="center">
     <div style="display:inline-block; vertical-align: middle;">
-      <img height="180" src="images/GRBL_SPD LOGO.png">
+      <img height="180" src="images/GRBL_SPD LOGO.png" href="#">
     </div>
   </div> 
 

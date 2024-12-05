@@ -170,7 +170,7 @@ First thing to do is to check whether your controller is setup for the PWM signa
 <h3>The Router </h3>
 Start by removing the router and remove the four screws holding the cap.  Once open, run the wiring through the cover before making any connections.  Now locate the red/white/black wires from the speed dial.  Cut these wires and remove the Makita dial making sure there is enough wire left to make the connections.  Connect the Makita red/white/black to GRBL_SPD red/white/black (refer to connection diagram). Locate the white wire from the Makita switch if you are connecting the internal optional relay.  Cut the white wire leaving enough length to make connections to both ends.  Connect high voltage wires from relay to both ends of the cut white wire (refer to connection diagram).  Connect low voltage wires to remaining connections on the relay(refer to connection diagram).  The relay can be placed in the cavity on the opposite side of the main power connector or where the speed dial used to be.  Screw the top of the router back on making sure not to pinch any wires and mount router back onto CNC.
 
-
+<div>
 <a href="images/IMG_5855.JPG">
   <img  height="250" src="images/IMG_5855.JPG">
 </a>
@@ -186,7 +186,7 @@ Start by removing the router and remove the four screws holding the cap.  Once o
 <a href="images/IMG_5862.JPG">
   <img  height="250" src="images/IMG_5862.JPG">
 </a>
-
+</div>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <h3>Optional Manual Control<h3>

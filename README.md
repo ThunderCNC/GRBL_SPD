@@ -1,42 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-</head>
-<body>  
-  <h1 align="center">GRBL_SPD</h1>
-  <p align="center">Developed for use with, but not limited to the Arduino Uno board (Flashed with GRBL 1.1)</p>
-  <p align="center">Router integration board for CNC (Currently for Makita 701C only)</p>
-  <h2>ABOUT THE GRBL_SPD</h2>
-  <p>
-    This project allows for automatic control of a standard router for CNC machines. GRBL_SPD lets you set the rpm for your bits in software such as Vectric and have it automatically set your router. This cicuit replaces the potentiometer in the router and has an accuracy of approximately between +/- 100 to 200 RPM. In most cases this deviation has no impact on the machining process. You now don't have to turn on the router before sending the file, GRBL_SPD will do it for you. There are inputs for manual control which overrides the RPM setting in the GRBL file being sent. 
-  </p></br>
-  <h2>VERSIONS AVAILABLE AND COMING SOON</h2>
-  <div>
-    <h4>Version 3 -- Available</h4>
-    <a title="Go to v3 page" href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/versions/Version_3.md">
-      <img height="150" src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v3.png">
-    </a>
-  </div></br>
-  <div>
-    <h4>Version 4 -- Coming Soon</h4>
-    <a title="Go to v4 page" href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/versions/Version_4.md">
-      <img height="150" src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v4.png">
-    </a>
-  </div></br>
-  <div>
-    <h4>Version 5 -- Coming Soon</h4>
-    <a title="Go to v5 page" href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/versions/Version_5.md">
-      <img height="150" src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/images/MakitaGrbl_v5.png">
-    </a>
-  </div></br>
-
   <div align="center">
-  <p align="center">Link to purchase kits</p>
-  <a href="https://www.tindie.com/stores/gingertesla/?ref=offsite_badges&utm_source=sellers_GingerTesla&utm_medium=badges&utm_campaign=badge_medium">
-    <img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78">
+    <div style="display:inline-block; vertical-align: middle;margin-right:10px;">
+      <a href="https://www.ebay.ca/itm/226146198705">
+        <img height="60" src="images/ebay.png">
+      </a>
+    </div>
+    <div style="display:inline-block; vertical-align: middle;">
+      <img height="110" src="images/GRBL_SPD LOGO.png">
+    </div>
+    <div style="display:inline-block; vertical-align: middle;">
+      <!-- <p align="center">Link to purchase kits</p> -->
+      <a href="https://www.tindie.com/stores/gingertesla/?ref=offsite_badges&utm_source=sellers_GingerTesla&utm_medium=badges&utm_campaign=badge_medium">
+      <img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie"  height="80">
+      </a>
+    </div>
+  </div> 
+
+  <div align="center" >
+  <a href="https://www.facebook.com/ThunderCNC" style="margin-right:10px">
+    <img src="images/facebook.png" height="40" alt="Facebook"/>
+  </a>
+  <a href="http://www.youtube.com/@Thunder116fd" style="margin-right:10px">
+    <img src="images/youtube.png" height="40" alt="Youtube"/>
+  </a>
+  <a href="https://www.instagram.com/thunder_cnc/" style="margin-right:10px">
+    <img src="images/instagram.png" height="40" alt="Instagram"/>
+  </a>
+  <a href="https://www.linkedin.com/in/jon-harrison-01428557">
+    <img src="images/linkedin.png" height="40" alt="Linkedin"/>
   </a>
   </div>
+  </br>
+  </br>
+  <p align="center" >Developed to integrate software control of the Makita 701C for use with but not limited to the Arduino Uno board (Flashed with GRBL 1.1)
+  </p>
+  <h2>ABOUT THE GRBL_SPD</h2>
+  <p>
+    This project allows for automatic control of a standard Makita 701C router for CNC machines. GRBL_SPD lets you set the rpm for your bits in software such as Vectric and have it automatically set your router. This cicuit replaces the potentiometer in the router and has an accuracy of approximately between +/- 100 to 200 RPM. In most cases this deviation has no impact on the machining process. You no longer have to turn on the router before sending the file, GRBL_SPD will do it for you. There are inputs for manual control which overrides the RPM setting in the GRBL file being sent. 
+  </p></br>
+  <h2>VERSIONS</h2>
+  <div>
+    <h4>Version 3 -- Discontinued</h4>
+    <p> Reason: ATtiny84 microcontroller reached end of life.</p>
+    <a title="Go to v3 page" href="versions/Version_3.md">
+      <img height="150" src="images/MakitaGrbl_v3.png">
+    </a>
+  </div></br>
+  <div>
+    <h4>Version 4 -- Available</h4>
+    <p> Upgraded to ATtiny1624 microcontroller</p>
+    <a title="Go to v4 page" href="versions/Version_4.md">
+      <img height="150" src="images/MakitaGrbl_v4.png">
+    </a>
+  </div></br>
+  <!--<div>
+    <h4>Version 5 -- Coming Soon</h4>
+    <a title="Go to v5 page" href="versions/Version_5.md">
+      <img height="150" src="images/MakitaGrbl_v5.png">
+    </a>
+  </div></br> -->
+
+
 
 
 
@@ -51,5 +74,5 @@
   </p>
 
 
-</body>
-</html>
+
+

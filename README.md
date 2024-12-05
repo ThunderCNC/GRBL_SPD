@@ -1,21 +1,15 @@
+  
+  
   <div align="center">
-    <div style="display:inline-block; vertical-align: middle;margin-right:10px;">
-      <a href="https://www.ebay.ca/itm/226146198705">
-        <img height="60" src="images/ebay.png">
-      </a>
-    </div>
     <div style="display:inline-block; vertical-align: middle;">
-      <img height="110" src="images/GRBL_SPD LOGO.png">
-    </div>
-    <div style="display:inline-block; vertical-align: middle;">
-      <!-- <p align="center">Link to purchase kits</p> -->
-      <a href="https://www.tindie.com/stores/gingertesla/?ref=offsite_badges&utm_source=sellers_GingerTesla&utm_medium=badges&utm_campaign=badge_medium">
-      <img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie"  height="80">
-      </a>
+      <img height="180" src="images/GRBL_SPD LOGO.png">
     </div>
   </div> 
 
   <div align="center" >
+  <a href="https://www.ebay.ca/itm/226146198705" style="margin-right:10px">
+    <img height="40" src="images/ebay.svg">
+  </a>
   <a href="https://www.facebook.com/ThunderCNC" style="margin-right:10px">
     <img src="images/facebook.png" height="40" alt="Facebook"/>
   </a>
@@ -25,8 +19,11 @@
   <a href="https://www.instagram.com/thunder_cnc/" style="margin-right:10px">
     <img src="images/instagram.png" height="40" alt="Instagram"/>
   </a>
-  <a href="https://www.linkedin.com/in/jon-harrison-01428557">
+  <a href="https://www.linkedin.com/in/jon-harrison-01428557" style="margin-right:10px">
     <img src="images/linkedin.png" height="40" alt="Linkedin"/>
+  </a>
+  <a href="https://www.tindie.com/stores/gingertesla/?ref=offsite_badges&utm_source=sellers_GingerTesla&utm_medium=badges&utm_campaign=badge_medium">
+    <img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie"  height="45">
   </a>
   </div>
   </br>

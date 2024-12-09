@@ -19,261 +19,274 @@
         a:active { 
         text-decoration: none; 
         }
+        .tooltip {
+        position: relative;
+        display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        }
+
+        .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+        }
+
+        .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+        }
     </style>
 </head>
-    <body>
-        <a id="readme-top"></a>
+<body style="padding:20px">
+    <a id="readme-top"></a>
 
-  <div align="center">
-    <div style="display:inline-block; vertical-align: middle;">
-      <img height="180" src="images/GRBL_SPD LOGO.png" href="#">
+    <div style="text-align:right;">
+        <div style="display:inline-block; vertical-align: middle;">
+            <img height="180" src="images/GRBL_SPD LOGO.png" href="#">
+        </div>
+    </div> 
+
+    <div style="text-align:right;" >
+        <a href="https://github.com/ThunderCNC/GRBL_SPD" style="margin-right:10px; "class="tooltip"><span class="tooltiptext">Goto Github Repo</span>
+            <img height="40" src="images/github-mark-white.png" style="background-color: purple;border-style: solid; border-radius: 25%; border-color: purple;"> 
+        </a>
+        <a href="https://www.ebay.ca/itm/226146198705" style="margin-right:10px; " class="tooltip"><span class="tooltiptext">Purchase on EBAY</span>
+            <img height="40" src="images/ebay.svg" style="border-style: solid; border-radius: 25% ;border-color: blue;">
+        </a>
+        <a href="https://www.facebook.com/ThunderCNC" style="margin-right:10px"class="tooltip"><span class="tooltiptext">Goto Facebook Page</span>
+            <img src="images/facebook.png" height="40" alt="Facebook"/>
+        </a>
+        <a href="http://www.youtube.com/@Thunder116fd" style="margin-right:10px"class="tooltip"><span class="tooltiptext">Goto Youtube Channel</span>
+            <img src="images/youtube.png" height="40" alt="Youtube"/>
+        </a>
+        <a href="https://www.instagram.com/thunder_cnc/" style="margin-right:10px"class="tooltip"><span class="tooltiptext">Goto Instagram</span>
+            <img src="images/instagram.png" height="40" alt="Instagram"/>
+        </a>
+        <a href="https://www.linkedin.com/in/jon-harrison-01428557" style="margin-right:10px"class="tooltip"><span class="tooltiptext">Goto LinkedIn</span>
+            <img src="images/linkedin.png" height="40" alt="Linkedin"/>
+        </a>
+        <a href="https://www.tindie.com/stores/gingertesla/?ref=offsite_badges&utm_source=sellers_GingerTesla&utm_medium=badges&utm_campaign=badge_medium"class="tooltip"><span class="tooltiptext">Purchase at TINDIE</span>
+            <img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie"  height="45">
+        </a>
     </div>
-  </div> 
-
-  <div align="center" >
-  <a href="https://www.ebay.ca/itm/226146198705" style="margin-right:10px; ">
-    <img height="40" src="images/ebay.svg" style="border-style: solid; border-radius: 25% "> 
-  </a>
-  <a href="https://www.facebook.com/ThunderCNC" style="margin-right:10px">
-    <img src="images/facebook.png" height="40" alt="Facebook"/>
-  </a>
-  <a href="http://www.youtube.com/@Thunder116fd" style="margin-right:10px">
-    <img src="images/youtube.png" height="40" alt="Youtube"/>
-  </a>
-  <a href="https://www.instagram.com/thunder_cnc/" style="margin-right:10px">
-    <img src="images/instagram.png" height="40" alt="Instagram"/>
-  </a>
-  <a href="https://www.linkedin.com/in/jon-harrison-01428557" style="margin-right:10px">
-    <img src="images/linkedin.png" height="40" alt="Linkedin"/>
-  </a>
-  <a href="https://www.tindie.com/stores/gingertesla/?ref=offsite_badges&utm_source=sellers_GingerTesla&utm_medium=badges&utm_campaign=badge_medium">
-    <img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie"  height="45">
-  </a>
-  </div>
-  </br>
-  </br>
-  <p align="center" >Developed to integrate software control of the Makita 701C for use with but not limited to the Arduino Uno board (Flashed with GRBL 1.1)
-  </p>
-  <h2>ABOUT THE GRBL_SPD</h2>
-  <p>
-    This project allows for automatic control of a standard Makita 701C router for CNC machines. GRBL_SPD lets you set the rpm for your bits in software such as Vectric and have it automatically set your router. This cicuit replaces the potentiometer in the router and has an accuracy of approximately between +/- 100 to 200 RPM. In most cases this deviation has no impact on the machining process. You no longer have to turn on the router before sending the file, GRBL_SPD will do it for you. There are inputs for manual control which overrides the RPM setting in the GRBL file being sent. 
-  </p></br>
-  <h2>VERSIONS</h2>
-  <div>
-    <h2>Version 3 -- Discontinued</h2>
-    <p> Reason: ATtiny84 microcontroller reached end of life.</p>
-    <a title="Go to v3 page" href="versions/Version_3.md">
-      <img width="60%" src="images/MakitaGrbl_v3.png">
-    </a>
-  </div></br>
-  <div>
-    <h2>Version 4 -- Available</h2>
-    <p> Upgraded to ATtiny1624 microcontroller</p>
-    <a title="Go to v4 page" href="versions/Version_4.md">
-      <img width="60%" src="images/MakitaGrbl_v4.png">
-    </a>
-  </div></br>
-  <!--<div>
-    <h4>Version 5 -- Coming Soon</h4>
-    <a title="Go to v5 page" href="versions/Version_5.md">
-      <img height="150" src="images/MakitaGrbl_v5.png">
-    </a>
-  </div></br> -->
-
-
-  <p> 
+    </br>
+    </br>
+    <p style="text-align: center;" >Developed to integrate software control of the Makita 701C for use with but not limited to the Arduino Uno board (Flashed with GRBL 1.1)</p>
+  
+    <h2>ABOUT THE GRBL_SPD</h2>
+    <p>
+        This project allows for automatic control of a standard Makita 701C router for CNC machines. GRBL_SPD lets you set the rpm for your bits in software such as Vectric and have it automatically set your router. This cicuit replaces the potentiometer in the router and has an accuracy of approximately between +/- 100 to 200 RPM. In most cases this deviation has no impact on the machining process. You no longer have to turn on the router before sending the file, GRBL_SPD will do it for you. There are inputs for manual control which overrides the RPM setting in the GRBL file being sent. 
+    </p>
+    <a href="https://github.com/ThunderCNC/GRBL_SPD" style="color:purple"><img src="images/github-mark-white.png" height="20" style="background-color: purple;border-radius: 25%; border-color: purple;"></img>&nbsp Link to GRBL_SPD Repository</a>
+    </br>
+    <h2>VERSIONS</h2>
+    <div>
+        <h2>Version 3 -- Discontinued</h2>
+        <p> Reason: ATtiny84 microcontroller reached end of life.</p>
+        <a title="Go to v3 page" href="versions/Version_3.md">
+            <img width="60%" src="images/MakitaGrbl_v3.png">
+        </a>
+    </div>
+    </br>
+    <div>
+        <h2>Version 4 -- Available</h2>
+        <p> Upgraded to ATtiny1624 microcontroller</p>
+        <a title="Go to v4 page" href="versions/Version_4.md">
+            <img width="60%" src="images/MakitaGrbl_v4.png">
+        </a>
+    </div>
+    </br>
+ 
     <h2>Version 4 Features:</h2>
     <ul>
-      <li>20MHz ATtiny1624 microcontroller</li>
-      <li>10,000 to 30,000 RPM</li>
-      <li>On/Off relay control</li>
-      <li>Auto off when using manual override</li>
-      <li>External manual controls</li>
-    </ul>
-  </p>
-
-
-  <h2>Prerequisites:</h2>
-    <ul>
-      <li>+5v power and ground from CNC controller</li>
-      <li>0-5v PWM signal from CNC controller</li>
-      <li>1kHz PWM signal</li>
-      <li>Sheilded cable between router and GRBL_SPD</li>
-    </ul>
-
-
-  <h2>Optional:</h2>
-    <ul>
-      <li>Connect relay for on/off function</li>
-      <li>Potentiometer and switch for manual controls</li>
-    </ul>
-
-  <h3>Videos:</h3>
-
-    <ul>
-      <li><a href="https://youtu.be/yv5z3KrGrSQ">Video 1</a></li>
-      <li><a href="https://youtu.be/ecWwXNGC7Bc" >Video 2</a></li>
-    </ul>
-
-  <h4>Some users have tested with 240v Makita versions and have it functioning. I am not able to confirm this other than some video and testimony from those users. This board is designed for the Makita 701C so any other models will be experimenting at your own risk.</h4>
- 
-    <ul>Links to videos from Derek using the Makita 700C 240vac.
-      <li><a href="https://youtu.be/zJGl1yo-icU">Video 3</a></li>
-      <li><a href="https://youtu.be/4u-4MBUV964">Video 4</a></li>
+        <li>20MHz ATtiny1624 microcontroller</li>
+        <li>10,000 to 30,000 RPM</li>
+        <li>On/Off relay control</li>
+        <li>Auto off when using manual override</li>
+        <li>External manual controls</li>
     </ul>
   
-  <h3><STRONG>WARNING!</STRONG> Voltages above 5v connected to this board will damage the microcontroller. If experimenting with controllers other than the standard Uno be sure to double check voltages and/or add protection to inputs. Zener and resistor for example.</h3>
-  <h3>Possible high voltage setup:</h3>
-  <div>
-  <a href="images/higherVoltage2.png">
-    <img  width="60%" src="images/higherVoltage2.png">
-  </a>
-  </div>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-  <h2>Controller Settings</h2>
-  <h3>GRBL 1.1  config.h</h3>
- <pre>
-    <code>
-        #define VARIABLE_SPINDLE // Default enabled. Comment to disable.
-
-        #define SPINDLE_PWM_MIN_VALUE 2 // Default disabled. Uncomment to enable. Must be greater than zero. Integer (1-255).
-    </code>
-</pre>
-<h3>GRBL settings</h3>
-<pre>
-    <code>
-        $30=30000
-        $31=10000
-        $32=0
-    </code>
-</pre>
-<p>
- Depending on your sending software and controller setup there may be a setting for PWM frequency which should be 1kHz. There may also be settings for PWM voltage 0-5v or 0-10v so make sure it's set for 0-5v. A few different senders also have their own settings for min and max RPM so they should match the grbl settings. If your software/controller has mapping than you may need to set PWM accordingly so that 0% is off, 1 or 2% is min and 100% is max. 
-</p>
- <h2> Connections</h2>
-     <ul>
-      <li>Power Input --> [+5v] and [GND] from controller 5v and ground</li>
-      <li>PWM --> [PWM] 0-5v PWM from controller</li>
-      <li>Router --> [RED] / [WHT] / [BLK] from router</li>
-      <li>Relay --> [-] and [+] to relay coil</li>
-      <li>Manual SW --> [IN] and [+] to switch</li>
-      <li>Manual CTRL --> [-] / [ADJ] / [-] to potentiometer</li>
+    <h2>Prerequisites:</h2>
+    <ul>
+        <li>+5v power and ground from CNC controller</li>
+        <li>0-5v PWM signal from CNC controller</li>
+        <li>1kHz PWM signal</li>
+        <li>Sheilded cable between router and GRBL_SPD</li>
     </ul>
-<div>
-<a href="images/ConnectionDiagram_v4.png">
-  <img  width="60%" src="images/ConnectionDiagram_v4.png">
-</a>
-</div>
-</br>
-</br>
-</br>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+    <h2>Optional:</h2>
+    <ul>
+        <li>Connect relay for on/off function</li>
+        <li>Potentiometer and switch for manual controls</li>
+    </ul>
 
-<h1> Before You Begin </h1>
-<strong>First thing to do is to check whether your controller is setup for the PWM signal.  Make sure GRBL 1.1 is flashed to your controller.</strong>
-<ol type="1">
-    <li>If it is then with your machine turned on and using your favorite sender software, measure the voltage on the PWM (Arduino pin 11) while you adjust the RPM in the software.  It should read voltages between 0v and 5v and change up and down with the software.  If it does than you’re good to go.</li>
-    <li>If it doesn’t than you will need to re-flash your controller.  There are many resources on how to do this on the web.</li>
-</ol> 
+    <h2>Videos:</h2>
+    <ul><img height="20" src="images/yt_logo_mono_light.png" >&nbsp Links to videos of the Makita 701C
+        <li><a href="https://youtu.be/yv5z3KrGrSQ">Video 1</a></li>
+        <li><a href="https://youtu.be/ecWwXNGC7Bc" >Video 2</a></li>
+    </ul>
 
-<h3>Flashing GRBL</h3>
-<ol type="1">
-    <li>Make note of all your machine settings on your controller.</li>
-    <li>Download GRBL 1.1 latest version.</li>
-    <li>Uncomment enable variable spindle in config.h.</li>
-    <li>Flash to your controller.</li>
-    <li>If machine settings are gone enter them from notes.</li>
-</ol> 
+    <h4>Some users have tested with 240v Makita versions and have it functioning. I am not able to confirm this other than some video and testimony from those users. This board is designed for the Makita 701C so any other models will be experimenting at your own risk.</h4>
+ 
+    <ul><img height="20" src="images/yt_logo_mono_light.png" >&nbsp Links to videos from Derek using the Makita 700C 240vac.
+        <li><a href="https://youtu.be/zJGl1yo-icU">Video 3</a></li>
+        <li><a href="https://youtu.be/4u-4MBUV964">Video 4</a></li>
+    </ul>
+  
+    <h3 style="border: solid; background-color:yellow; padding: 3px; border-radius: 10px;"><STRONG>WARNING!</STRONG> Voltages above 5v connected to this board will damage the microcontroller. If experimenting with controllers other than the standard Uno be sure to double check voltages and/or add protection to inputs. Zener and resistor for example.</h3>
+    <h3>Possible high voltage setup:</h3>
+    <div>
+        <a href="images/higherVoltage2.png">
+            <img  width="60%" src="images/higherVoltage2.png">
+        </a>
+    </div>
 
-<h3>Items Not Provided</h3>
-<ol type="1">
-    <li>Wire long enough to run from the GRBL_SPD to the router (5 wires) and from the GRBL_SPD to the optional manual controls (5 wires).  In the range of 22 gauge as all these connections are low voltage and low current. Shielded cables are recommended to protection from interference.</li>
-    <li>Standoffs or other method to mount GRBL_SPD inside control case.  Old computer motherboard standoffs, PCB adhesive standoffs (Amazon) or however you see fit.</li>
-    <li>Soldering iron or connectors to make the connections inside the router and to the optional switch with potentiometer.</li>
-    <li>Electrical tape or heat shrink.</li>
-    <li>Small zip ties if necessary to keep things tidy.</li>
-</ol> 
+    <p style="text-align:right;">(<a href="#readme-top">back to top</a>)</p>
 
+    <h2>Controller Settings</h2>
+    <h3>GRBL 1.1  config.h</h3>
+    <pre style="background-color: #c9c8c5; border-radius: 10px">
+        <code>
+            #define VARIABLE_SPINDLE // Default enabled. Comment to disable.
 
-<h3>The Router </h3>
-<p>Start by removing the router and remove the four screws holding the cap.  Once open, run the wiring through the cover before making any connections.  Now locate the red/white/black wires from the speed dial.  Cut these wires and remove the Makita dial making sure there is enough wire left to make the connections.  Connect the Makita red/white/black to GRBL_SPD red/white/black (refer to connection diagram). Locate the white wire from the Makita switch if you are connecting the internal optional relay.  Cut the white wire leaving enough length to make connections to both ends.  Connect high voltage wires from relay to both ends of the cut white wire (refer to connection diagram).  Connect low voltage wires to remaining connections on the relay(refer to connection diagram).  The relay can be placed in the cavity on the opposite side of the main power connector or where the speed dial used to be.  Screw the top of the router back on making sure not to pinch any wires and mount router back onto CNC.
-</p>
+            #define SPINDLE_PWM_MIN_VALUE 2 // Default disabled. Uncomment to enable. Must be greater than zero. Integer (1-255).
+        </code>
+    </pre>
+    <h3>GRBL settings</h3>
+    <pre style="background-color: #c9c8c5; border-radius: 10px">
+        <code>
+            $30=30000
+            $31=10000
+            $32=0
+        </code>
+    </pre>
+    <p>Depending on your sending software and controller setup there may be a setting for PWM frequency which should be 1kHz. There may also be settings for PWM voltage 0-5v or 0-10v so make sure it's set for 0-5v. A few different senders also have their own settings for min and max RPM so they should match the grbl settings. If your software/controller has mapping than you may need to set PWM accordingly so that 0% is off, 1 or 2% is min and 100% is max. </p>
+    <h2> Connections</h2>
+    <ul>
+        <li>Power Input --> [+5v] and [GND] from controller 5v and ground</li>
+        <li>PWM --> [PWM] 0-5v PWM from controller</li>
+        <li>Router --> [RED] / [WHT] / [BLK] from router</li>
+        <li>Relay --> [-] and [+] to relay coil</li>
+        <li>Manual SW --> [IN] and [+] to switch</li>
+        <li>Manual CTRL --> [-] / [ADJ] / [-] to potentiometer</li>
+    </ul>
+    <div>
+        <a href="https://github.com/ThunderCNC/GRBL_SPD" style="color:purple"><img src="images/github-mark-white.png" height="20" style="background-color: purple;border-radius: 25%; border-color: purple;"></img>&nbsp Link to GRBL_SPD Repository</a>
+        <p>Diagram below is available in the installation folder at the Github repository</p>
+    </div>
+    <div>
+        <a href="images/ConnectionDiagram_v4.png">
+        <img  width="60%" src="images/ConnectionDiagram_v4.png">
+        </a>
+    </div>
+    </br>
+    </br>
+    </br>
 
-<div>
-<a href="images/IMG_5855.JPG">
-  <img  height="250" src="images/IMG_5855.JPG">
-</a>
-<a href="images/IMG_5860.JPG">
-  <img  height="250" src="images/IMG_5860.JPG">
-</a>
-<a href="images/Picture1.png">
-  <img  height="250" src="images/Picture1.png">
-</a>
-<a href="images/Picture2.png">
-  <img  height="250" src="images/Picture2.png">
-</a>
-<a href="images/IMG_5862.JPG">
-  <img  height="250" src="images/IMG_5862.JPG">
-</a>
-</div>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+    <p style="text-align:right;">(<a href="#readme-top">back to top</a>)</p>
 
-<h3>Optional Manual Control<h3>
-<p>
-If you have downloaded and printed the stl file provided here then start by running the wires through the printed hole at the back.  If your wires are going to go downward from the enclosure then start by connecting the wiring to the potentiometer (refer to connection diagram).  Mount the potentiometer and the switch into the 3D printed enclosure. Connect the remaining two wires to the switch.  
-This enclosure is made to snap onto the Millright Mega V leg.  If you're not using this enclosure then do as you need and make the same connections as per your mount.
-</p>
-<div>
-<a href="images/IMG_5917.JPG">
-  <img  height="250" src="images/IMG_5917.JPG">
-</a>
-<a href="images/IMG_5918.JPG">
-  <img  height="250" src="images/IMG_5918.JPG">
-</a>
-</div>
+    <h1> Before You Begin </h1>
+    <strong>First thing to do is to check whether your controller is setup for the PWM signal.  Make sure GRBL 1.1 is flashed to your controller.</strong>
+    <ol type="1">
+        <li>If it is then with your machine turned on and using your favorite sender software, measure the voltage on the PWM (Arduino pin 11) while you adjust the RPM in the software.  It should read voltages between 0v and 5v and change up and down with the software.  If it does than you’re good to go.</li>
+        <li>If it doesn’t than you will need to re-flash your controller.  There are many resources on how to do this on the web.</li>
+    </ol> 
 
-<h3>The Mount:</h3>
+    <h3>Flashing GRBL</h3>
+    <ol type="1">
+        <li>Make note of all your machine settings on your controller.</li>
+        <li>Download GRBL 1.1 latest version.</li>
+        <li>Uncomment enable variable spindle in config.h.</li>
+        <li>Flash to your controller.</li>
+        <li>If machine settings are gone enter them from notes.</li>
+    </ol> 
 
-<p>The STL files for this mount and a back filler piece for stand alone mount are located in the stl folder.</p>
+    <h3>Items Not Provided</h3>
+    <ol type="1">
+        <li>Wire long enough to run from the GRBL_SPD to the router (5 wires) and from the GRBL_SPD to the optional manual controls (5 wires).  In the range of 22 gauge as all these connections are low voltage and low current. Shielded cables are recommended to protection from interference.</li>
+        <li>Standoffs or other method to mount GRBL_SPD inside control case.  Old computer motherboard standoffs, PCB adhesive standoffs (Amazon) or however you see fit.</li>
+        <li>Soldering iron or connectors to make the connections inside the router and to the optional switch with potentiometer.</li>
+        <li>Electrical tape or heat shrink.</li>
+        <li>Small zip ties if necessary to keep things tidy.</li>
+    </ol> 
 
-<div>
-<a href="https://github.com/ThunderCNC/GRBL_SPD/blob/main/stl/FillerMount.stl">
-  <img  height="250" src="https://github.com/ThunderCNC/GRBL_SPD/blob/main/stl/FillerMount.stl?raw=true">
-</a>
-<a href="images/Filler3.JPG">
-  <img  height="250" src="images/Filler3.JPG">
-</a>
-</div>
+    <h3>The Router </h3>
+    <p>Start by removing the router and remove the four screws holding the cap.  Once open, run the wiring through the cover before making any connections.  Now locate the red/white/black wires from the speed dial.  Cut these wires and remove the Makita dial making sure there is enough wire left to make the connections.  Connect the Makita red/white/black to GRBL_SPD red/white/black (refer to connection diagram). Locate the white wire from the Makita switch if you are connecting the internal optional relay.  Cut the white wire leaving enough length to make connections to both ends.  Connect high voltage wires from relay to both ends of the cut white wire (refer to connection diagram).  Connect low voltage wires to remaining connections on the relay(refer to connection diagram).  The relay can be placed in the cavity on the opposite side of the main power connector or where the speed dial used to be.  Screw the top of the router back on making sure not to pinch any wires and mount router back onto CNC.</p>
 
-<h3> GRBL_SPD Connections:</h3>
-<p>
-Run the wire from the router to the control box through the drag chains if equipped. Run the wires from the manual controls if installed.  Make the router and manual control connections to the GRBL_SPD board (refer to connection diagram). Connect the PWM wire to the GRBL controller. Connect the 5v power and ground to the GRBL controller.  Take a moment to check all connections.
-</p>
-<h3>CHECKS:</h3>
-<ol type="1">
-    <li>Turn on you CNC with the computer connected and the sender software running.  Check that the POWER ON led is on.</li>
-    <li>Turn the manual control switch on if you have it. The spindle should be running at what the dial is indicating. Check that the RELAY ON led and the MANUAL ON led are on.  Turn the knob from left (10000 rpm) to right (30000 rpm).  If the RPM is reacting opposite to the dial then the potentiometer wires have been connected incorrectly. Reverse the (+) and (-) wires at the GRBL_SPD board.</li>
-    <li>In your sender software be sure to set $30 to 30000 and $31 to 10000. Also make sure if there is a configuration section in the software, be sure to check that the min and max rpm are set the same. You may need to restart the software after changes are made.</li>
-    <li>With manual turned off, start the spindle with the software.  Adjust to different RPM to ensure it’s functioning.  If it’s not then check your connections and/or ensure that the variable spindle option is enabled in GRBL with a voltmeter.</li>
-    <li>If all is well and you have the manual controls, turn the spindle on with the software set at 15000 rpm.  Set the manual dial to 30000 rpm and turn on the switch.  Rpm should not have changed.  Slowly turn the dial down towards 15000 rpm and when it is close, the manual control will take over.  If the switch is turned off it will revert back to the software setting.  If you’re in the middle of a path and want to override the software speed, leave the switch on until complete. The router will turn off when the path is complete.</li>
-    <li>Test your M3, M5, S##### commands.</li>
-</ol>  
+    <div>
+        <a href="images/IMG_5855.JPG">
+            <img  height="250" src="images/IMG_5855.JPG">
+        </a>
+        <a href="images/IMG_5860.JPG">
+            <img  height="250" src="images/IMG_5860.JPG">
+        </a>
+        <a href="images/Picture1.png">
+            <img  height="250" src="images/Picture1.png">
+        </a>
+        <a href="images/Picture2.png">
+            <img  height="250" src="images/Picture2.png">
+        </a>
+        <a href="images/IMG_5862.JPG">
+            <img  height="250" src="images/IMG_5862.JPG">
+        </a>
+    </div>
+    <p style="text-align:right;">(<a href="#readme-top">back to top</a>)</p>
 
-<p>Now you can set your speeds for each bit in your cad software of choice and your router will automatically be set to your required speed.  When your path is finished the router will turn off when complete.</p>
+    <h3>Optional Manual Control</h3>
+    <p>If you have downloaded and printed the stl file provided here then start by running the wires through the printed hole at the back.  If your wires are going to go downward from the enclosure then start by connecting the wiring to the potentiometer (refer to connection diagram).  Mount the potentiometer and the switch into the 3D printed enclosure. Connect the remaining two wires to the switch.  
+    This enclosure is made to snap onto the Millright Mega V leg.  If you're not using this enclosure then do as you need and make the same connections as per your mount.</p>
+    <div>
+        <a href="images/IMG_5917.JPG">
+            <img  height="250" src="images/IMG_5917.JPG">
+        </a>
+        <a href="images/IMG_5918.JPG">
+            <img  height="250" src="images/IMG_5918.JPG">
+        </a>
+    </div>
+    <p>The STL files for this mount and a back filler piece for stand alone mount are located in the stl folder at the Github repo.</p>
+    <a href="https://github.com/ThunderCNC/GRBL_SPD"><img src="images/github-mark-white.png" height="20" style="background-color: purple;border-radius: 25%; border-color: purple;"></img>&nbsp Link to GRBL_SPD Repository</a>
 
-<h3>NOTES:</h3>
-<p>
-The GRBL_SPD board you receive has been tested and calibrated with a Makita 701C router. There could be slight differences in routers but the variance in RPM shouldn’t be too drastic. If you have a handheld tachometer then you can test and adjust the RPM with the trimmer resister if necessary.  In your sender software of choice turn on the router and set it for 20000 rpm.  Take a reading with the tachometer and adjust the trimmer until it’s as close to 20000 as possible.
+    <h3> GRBL_SPD Connections:</h3>
+    <p>Run the wire from the router to the control box through the drag chains if equipped. Run the wires from the manual controls if installed.  Make the router and manual control connections to the GRBL_SPD board (refer to connection diagram). Connect the PWM wire to the GRBL controller. Connect the 5v power and ground to the GRBL controller.  Take a moment to check all connections.</p>
+    <h3>CHECKS:</h3>
+    <ol type="1">
+        <li>Turn on you CNC with the computer connected and the sender software running.  Check that the POWER ON led is on.</li>
+        <li>Turn the manual control switch on if you have it. The spindle should be running at what the dial is indicating. Check that the RELAY ON led and the MANUAL ON led are on.  Turn the knob from left (10000 rpm) to right (30000 rpm).  If the RPM is reacting opposite to the dial then the potentiometer wires have been connected incorrectly. Reverse the (+) and (-) wires at the GRBL_SPD board.</li>
+        <li>In your sender software be sure to set $30 to 30000 and $31 to 10000. Also make sure if there is a configuration section in the software, be sure to check that the min and max rpm are set the same. You may need to restart the software after changes are made.</li>
+        <li>With manual turned off, start the spindle with the software.  Adjust to different RPM to ensure it&apos;s functioning.  If it&apos;s not then check your connections and/or ensure that the variable spindle option is enabled in GRBL with a voltmeter.</li>
+        <li>If all is well and you have the manual controls, turn the spindle on with the software set at 15000 rpm.  Set the manual dial to 30000 rpm and turn on the switch.  Rpm should not have changed.  Slowly turn the dial down towards 15000 rpm and when it is close, the manual control will take over.  If the switch is turned off it will revert back to the software setting.  If you&apos;re in the middle of a path and want to override the software speed, leave the switch on until complete. The router will turn off when the path is complete.</li>
+        <li>Test your M3, M5, S##### commands.</li>
+    </ol>  
 
-That’s it, congratulations you’re done!
+    <p>Now you can set your speeds for each bit in your cad software of choice and your router will automatically be set to your required speed.  When your path is finished the router will turn off when complete.</p>
 
-Any questions drop me an email at jharrison116@hotmail.com or message me through the social links at the top of this page.
-</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+    <h3>NOTES:</h3>
+    <p>The GRBL_SPD board you receive has been tested and calibrated with a Makita 701C router. There could be slight differences in routers but the variance in RPM shouldn&apos;t be too drastic. If you have a handheld tachometer then you can test and adjust the RPM with the trimmer resister if necessary.  In your sender software of choice turn on the router and set it for 20000 rpm.  Take a reading with the tachometer and adjust the trimmer until it&apos;s as close to 20000 as possible.That&apos;s it, congratulations you&apos;re done!</p>
 
+    <p>Any questions drop me an email at jharrison116@hotmail.com or message me through the social links at the top of this page.
+    </p>
+    <p style="text-align:right;">(<a href="#readme-top">back to top</a>)</p>
 
-    </body>
+</body>
 </html>
